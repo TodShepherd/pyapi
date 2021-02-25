@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-#!/usr/bin/env python3
 
 from flask import Flask
 from flask import request
 from flask import render_template, url_for, redirect
-
 
 app = Flask(__name__)
 
@@ -27,6 +25,4 @@ def adder():
         print(groups)
         return render_template("hostsfile.html", groups=groups)
 
-
-## app.run(host="127.0.0.1", port=2224)
 app.run(host="0.0.0.0", port=2224) # runs the application
