@@ -20,6 +20,7 @@ def adder():
         groups.append({"hostname": hostname, "ip": ip, "fqdn": fqdn})
         print(groups)
         return redirect(url_for('adder'))
+    # this else statement simply prints the output when issuing a curl command and is used for debuggin purposes only
     else:
         print("Groups again")
         print(groups)
